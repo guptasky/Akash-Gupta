@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/FLUTTER/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+    <title></title>
+<!--    <link href="icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="icons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="icons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="icons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="icons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="icons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">-->
+    <link href="appicon.ico" rel="icon" sizes="32x32" type="image/png">
+    <link href="appicon.ico" rel="icon" sizes="32x32" type="image/png">
+    <link href="appicon.ico" rel="icon" sizes="96x96" type="image/png">
+    <link href="appicon.ico" rel="icon" sizes="16x16" type="image/png">
+    <link href="manifest.json" rel="manifest">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="icons/ms-icon-144x144.png" name="msapplication-TileImage">
+    <meta content="#ffffff" name="theme-color">
+    <script defer src="js/custom.js"></script>
+    <script defer src="flutter.js"></script>
+<!--    <script type="text/javascript">-->
+<!--        (function (w, d, s, u) {-->
+<!--            w.Verloop = function (c) { w.Verloop._.push(c) }; w.Verloop._ = []; w.Verloop.url = u;-->
+<!--            var h = d.getElementsByTagName(s)[0], j = d.createElement(s); j.async = true;-->
+<!--            j.src = 'https://yessecurities.verloop.io/livechat/script.min.js';-->
+<!--            h.parentNode.insertBefore(j, h);-->
+<!--        })(window, document, 'script', 'https://yessecurities.verloop.io/livechat');-->
+<!--        Verloop(function() {-->
+<!--      this.setRecipe("b5wx6LqHSAhtmPfkN");-->
+<!--      });-->
+<!--    </script>-->
+    <script type="text/javascript">
+        (function (w, d, Ve, u) {
+          w.Verloop = function (c) { w.Verloop._.push(c) };
+          w.Verloop._ = [];
+          w.Verloop.url = u;
+          var h = d.getElementsByTagName(Ve)[0], j = d.createElement(Ve);
+          j.async = true;
+          j.src = 'https://yessec.stage.verloop.io/livechat/script.min.js';
+          h.parentNode.insertBefore(j, h);
+        })(window, document, 'script', 'https://yessec.stage.verloop.io/livechat');
+
+        window.openVerloopChat = function() {
+          if (window.Verloop) {
+            window.Verloop(function() { this.openChat(); });
+          }
+        };
+        window.VerloopCloseChat = function() {
+          if (window.Verloop) {
+            window.Verloop(function() { this.closeChat(); });
+          }
+        };
+    </script>
+    <style nonce="Sht6K0RM/hXjmodyVSN6xg==">
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+    }
+
+    .splash-image {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+
+<section class="parent">
+    <div class="child"><img alt="" height="135" src="icons/appLogo.png" width="270">
+    </div>
+</section>
+
+<script nonce="Sht6K0RM/hXjmodyVSN6xg==">
+    var serviceWorkerVersion = 260304;
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+      nonce:'Sht6K0RM/hXjmodyVSN6xg==',
+        serviceWorker: {
+          entrypointUrl: "main.dart.js?v=" + serviceWorkerVersion,
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: async function(engineInitializer) {
+      let appRunner = await engineInitializer.initializeEngine({
+        nonce: 'Sht6K0RM/hXjmodyVSN6xg==',
+      });
+      appRunner.runApp();
+    }
+      });
+    });
+</script>
+<!--<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>-->
+<!--<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-remote-config.js"></script>-->
+
+<script nonce="Sht6K0RM/hXjmodyVSN6xg==">
+    document.addEventListener('wheel', function(e) {
+      e.ctrlKey && e.preventDefault();
+    }, {
+      passive: false,
+    });
+
+</script>
+<script nonce="Sht6K0RM/hXjmodyVSN6xg==">
+    window.addEventListener('keydown', function(e) {
+      if (event.metaKey || event.ctrlKey) {
+        switch (event.key) {
+          case '=':
+          case '-':
+            event.preventDefault();
+            break;
+        }
+      }
+    });
+
+</script>
+</body>
+</html>
